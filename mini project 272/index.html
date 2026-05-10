@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Monitoring Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add the Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <h1>Device Control Panel</h1>
+
+    <!-- Monitoring (Made slightly wider to fit the graph nicely) -->
+    <div class="card" style="width: 400px;">
+        <h2>ADC Monitoring</h2>
+        <h3 id="adcValue">0</h3>
+        <!-- This is where the graph will appear -->
+        <canvas id="adcChart"></canvas>
+    </div>
+
+    <!-- Control -->
+    <div class="card">
+        <h2>LED Control</h2>
+        <div id="lamp" class="lamp-off"></div>
+        <button onclick="turnOnLED()">LED ON</button>
+        <button onclick="turnOffLED()">LED OFF</button>
+        <p id="ledStatus">LED Status: OFF</p>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

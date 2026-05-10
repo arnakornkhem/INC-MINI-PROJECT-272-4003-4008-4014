@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ee91aa;
+    text-align: center;
+}
+
+.card {
+    background: rgb(218, 208, 127);
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Lamp Base Styling */
+#lamp {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px auto;
+    /* Smooth animation for the glow and color change */
+    transition: background-color 0.4s ease, box-shadow 0.4s ease; 
+}
+
+/* State: OFF */
+.lamp-off {
+    background-color: #555;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* State: ON */
+.lamp-on {
+    background-color: #ff3b3b; /* Bright Yellow */
+    /* Creates the glowing animation effect */
+    box-shadow: 0 0 20px #ffeb3b, 0 0 40px #ffeb3b, inset 0 0 10px #fff; 
+}
